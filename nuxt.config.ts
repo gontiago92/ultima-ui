@@ -7,7 +7,7 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [join(currentDir, "./assets/css/main.css")],
-  modules: ["nuxt-icon", '@nuxtjs/tailwindcss'],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/icon"],
   runtimeConfig: {
     public: {
       apiBase: process.env.API_BASE || '/tenant'
